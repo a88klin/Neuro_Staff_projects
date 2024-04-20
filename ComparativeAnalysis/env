@@ -1,0 +1,5 @@
+OPENAI_API_KEY=...
+
+VACANCIES_JSON_FILES=vacancies_json
+RESUMES_JSON_FILES=resumes_json
+PDF_REPORT_FILES=pdf_reports
