@@ -48,9 +48,9 @@ if __name__ == "__main__":
     resume_json = 'Будилов_Кирилл-ac4ecc8b-8da8-4441-b4de-a71c0805bdcd.json'
     # Выбранные вакансии
     vacancies_list_json = ['Java_разработчик-2ce1bca2-5a23-4f68-8566-8ff0f7f87e3c.json',
-                           'Java_разработчик-6e8ea5e3-47fb-4a15-84fa-6ab618dcbbe0.json',
-                           'Java_разработчик-654b79d7-6b07-4705-969d-41a9eef10503.json',
-                           'Java_разработчик-f6b48d5d-882e-4afd-8826-3d46b78342c6.json',
+                           # 'Java_разработчик-6e8ea5e3-47fb-4a15-84fa-6ab618dcbbe0.json',
+                           # 'Java_разработчик-654b79d7-6b07-4705-969d-41a9eef10503.json',
+                           # 'Java_разработчик-f6b48d5d-882e-4afd-8826-3d46b78342c6.json',
                            ]
     # Указать main_skill - какой навык в резюме является ключевым.
     # Если не указано, AI попытается определить самостоятельно

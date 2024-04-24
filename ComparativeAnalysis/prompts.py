@@ -23,6 +23,7 @@ def question_skills(resume_skills, vacancy_skills):
       После каждого ответа ставь перенос строки: <br/>. При форматировании текста используй HTML теги: 
       <b>Жирный текст</b>, <i>курсив</i>, <u>подчеркивание</u> и другие стили, а также перенос строки <br/>""")
 
+
 def main_skill_1(resume_skills, resume_experience, current_date=current_date):
     return re.sub(r'\s+', ' ', f"""
     *** You have the position and skills of a candidate from a resume: {resume_skills}. *** 
@@ -34,6 +35,7 @@ def main_skill_1(resume_skills, resume_experience, current_date=current_date):
     Если в интервале работы НЕТ упоминания основного навыка - этот интервал не считать.
     Какой суммарный опыт в месяцах по основному навыку ? Выведи расчет и количество месяцев.
     Даты в резюме указаны в формате: yyyy-mm-dd. Если дата "to None" - используй {current_date}.""")
+
 
 def main_skill_2(resume_experience, main_skill, current_date=current_date): # Скилл указан
     return re.sub(r'\s+', ' ', f"""
