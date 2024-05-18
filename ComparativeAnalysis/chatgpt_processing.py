@@ -9,7 +9,7 @@ AMOUNT = 0 # Стоимость обработки OpenAI
 
 
 def print_tokens_count_and_price(completion):
-    # 18/04/2024 - https://openai.com/pricing
+    # https://openai.com/pricing
     # gpt-3.5-turbo-0125 - Input: $0.50 / 1M tokens - Output: $1.50 / 1M tokens
     price = 0.5 * completion.usage.prompt_tokens / 1e6 + \
             1.5 * completion.usage.completion_tokens / 1e6
@@ -34,10 +34,10 @@ def get_answers_gpt(resume_dict, vacancy_dict, main_skill):
 
     # Сравнение Скилов ****************************************************
     content_1 = prompts.question_skills(resume_dict['position_skills'],
-                                        vacancy_dict['position_skills'])
+                                        vacancy_dict['position_skills'] + vacancy_dict['mandatory_requirements'])
     message_1 = [{"role": "system", "content": prompts.system},
                  {"role": "user", "content": f"{content_1}"}]
-    answers_gpt['all_skills'] = answer_gpt(message_1, temp=0.3)
+    answers_gpt['all_skills'] = answer_gpt(message_1, temp=0)
 
     # Определение основного Скилла и опыта *********************************
     if not main_skill: # Если основной Скилл не указан
@@ -48,7 +48,7 @@ def get_answers_gpt(resume_dict, vacancy_dict, main_skill):
 
     message_2 = [{"role": "system", "content": prompts.system},
                  {"role": "user", "content": f"{content_2}"}]
-    answers_gpt['main_skill'] = answer_gpt(message_2, temp=0.3)
+    answers_gpt['main_skill'] = answer_gpt(message_2, temp=0)
 
     # ******************************************
     print('Total amount: $', round(AMOUNT, 5))

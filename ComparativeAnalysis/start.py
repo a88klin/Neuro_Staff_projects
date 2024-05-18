@@ -45,12 +45,12 @@ def main(resume_json: str,
 # **************************************************************************
 if __name__ == "__main__":
     # Резюме
-    resume_json = 'Будилов_Кирилл-ac4ecc8b-8da8-4441-b4de-a71c0805bdcd.json'
+    resume_json = '2ef8ffec-52ee-4b90-991d-6c239df3c31c.json'
     # Выбранные вакансии
-    vacancies_list_json = ['Java_разработчик-2ce1bca2-5a23-4f68-8566-8ff0f7f87e3c.json',
-                           # 'Java_разработчик-6e8ea5e3-47fb-4a15-84fa-6ab618dcbbe0.json',
-                           # 'Java_разработчик-654b79d7-6b07-4705-969d-41a9eef10503.json',
-                           # 'Java_разработчик-f6b48d5d-882e-4afd-8826-3d46b78342c6.json',
+    vacancies_list_json = ['vacancy_2439be9f-3e20-4f73-8a23-00000021546.json',
+                           # '',
+                           # '',
+                           # '',
                            ]
     # Указать main_skill - какой навык в резюме является ключевым.
     # Если не указано, AI попытается определить самостоятельно

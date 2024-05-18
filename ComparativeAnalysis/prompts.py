@@ -15,10 +15,8 @@ def question_skills(resume_skills, vacancy_skills):
     * Questions #3: Specify which skills are missing from the resume compared to the required skills 
       from the vacancy.    
     * Questions #4: What is the percentage from 0 to 100 of matching skills in the candidate's resume 
-      compared to the necessary skills in the vacancy and why? Answer the question briefly in one sentence.    
-    * Answer all questions in Russian, with the exception of the words denoting the candidate's 
-      skills, if you write about them. So, answer in Russian, but if you use words denoting the 
-      candidate's skills, write skills in English. 
+      compared to the necessary skills in the vacancy and why? Answer the question briefly in one sentence. 
+      Отвечай на русском языке. Если слова - навыки указаны на английском - выводи навыки на английском.
       В каждый ответ включи саммари вопроса, на который получен ответ. Выдавай только саммари вопроса и ответ.
       После каждого ответа ставь перенос строки: <br/>. При форматировании текста используй HTML теги: 
       <b>Жирный текст</b>, <i>курсив</i>, <u>подчеркивание</u> и другие стили, а также перенос строки <br/>""")
